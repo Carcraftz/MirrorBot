@@ -14,7 +14,7 @@ Add the channel ids (in quotes seperated by commas bc it's an array) for the cha
 
 ## Run the following Commands:
 
-npm i discord.js@11.6.3
+npm i discord.js@11.5.1
 
 node server.js
 
