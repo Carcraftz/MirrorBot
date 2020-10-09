@@ -14,7 +14,7 @@ user.on("ready", ready => {
   const bot = new Discord.Client();
   bot.login(botoken);
   user.on("message", message => {
-    if (forwardfrom.includes(message.channel.id)) {
+    if (forwardfrom.includes(message.channel.id) ) {
       //forward message text
       const embed = new Discord.RichEmbed()
         .setColor("#0099ff")
@@ -23,7 +23,7 @@ user.on("ready", ready => {
         .setDescription(message.content)
         .setTimestamp()
         .setFooter(
-          "Mirror Bot",
+          "Mirror Bot - Created by Carcraftz#5445",
           "https://cdn.glitch.com/4e652625-3b07-492f-b7ce-b1f8b1ab5bf0%2Fistockphoto-822836798-612x612.jpg?v=1570677107821"
         );
       forwardto.forEach(channel => {
@@ -46,6 +46,10 @@ user.on("ready", ready => {
       message.embeds.forEach(embed1 => {
         let embedfinal = new Discord.RichEmbed(embed1);
         console.log(embedfinal);
+        embedfinal.setFooter(
+          "Mirror Bot - Created by Carcraftz#5445",
+          "https://cdn.glitch.com/4e652625-3b07-492f-b7ce-b1f8b1ab5bf0%2Fistockphoto-822836798-612x612.jpg?v=1570677107821"
+        );
         forwardto.forEach(channel => {
           bot.channels.get(channel).send(embedfinal);
         });
