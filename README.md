@@ -14,7 +14,7 @@ Add the channel ids (in quotes seperated by commas bc it's an array) for the cha
 
 ## Run the following Commands:
 
-npm i discord.js@11.5.1
+npm i discord.js-selfbot-v11 (made by me :D, src on GitHub)
 
 node server.js
 
