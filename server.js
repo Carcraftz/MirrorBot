@@ -7,7 +7,7 @@ let forwardfrom = [];
 //The channels you want to forward to (channel IDs)
 let forwardto = [];
 //===============================================================================================
-const Discord = require("discord.js");
+const Discord = require("discord.js-selfbot-v11");
 const user = new Discord.Client();
 user.login(usertoken);
 user.on("ready", ready => {
